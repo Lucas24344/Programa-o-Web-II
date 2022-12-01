@@ -1,0 +1,17 @@
+{
+  "name": "book-moon",
+  "version": "1.0.0",
+  "description": "Trabalho",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Micael Barros de Sousa",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6",
+    "mysql2": "^2.3.3"
+  }
+}

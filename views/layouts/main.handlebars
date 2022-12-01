@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <script src="https://kit.fontawesome.com/6988af4e51.js" crossorigin="anonymous" defer></script>
+    <style>
+    *{
+        margin: 0;
+        padding: 20px;
+    }
+    .header2 h1 {
+        font-size: 50px;
+        font-weight: 400;
+        margin-bottom: 1px;
+        margin: 20px 0px 0px 0px;
+        padding: 5px 0px 0px 5px;
+        font-family: 'Tauri', sans-serif;
+        color: #f8f8f8;
+        
+    }
+
+    .header1 {
+        float: left;
+        width: 110px;
+    }
+
+    .header2 {
+        float:left;    
+        width: 30%;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    }
+
+    
+    .header2 h2{
+        font-family: 'Tauri', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        padding: 0px 0px 0px 5px;
+        color: #99959D;
+    }
+
+    body{
+        width: 100%;
+        height: 100vh;
+        
+        display: flex;
+        flex-direction: column;
+        background-color: #4e19df;
+    }
+
+    form h1{
+        font-family: sans-serif;
+        margin-bottom: 1.6em;
+        margin-right: 18em;
+        
+    }
+
+    .livro {
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        width: 95%;
+        height: auto;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+        
+    }
+
+    .livro h1 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        margin-left: 5em;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
+    .livro .cadastro {
+        width: 30%;
+        margin-left: 10em;
+    }
+
+    .livro .cadastro input{
+        box-sizing: border-box; 
+        margin-top: 10px; 
+        margin-right: 2em;
+        width: 500px;
+        height: 69px;
+        float: left;
+        background: #FFFFFF;
+        border: 3px solid #F5F5F5;
+        border-radius: 10px;
+        font-family: 'Inter', sans-serif;
+        font-size: 20px;
+    }
+
+    form button{
+        margin-top: 10px;
+        margin-left: 10px;    
+        height: 67px;
+        float: left;
+        background: #4e19df;
+        border-radius: 10px;
+        font-family: 'Inter';
+        text-align: center;
+        font-weight: 700;
+        font-size: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        box-sizing: border-box;
+        padding: 20px;    
+        width: 400px;
+        cursor: pointer;
+    }
+
+    .dados {
+        margin-top: 100px;
+        padding: 1em;
+        border-radius: 25px;
+        margin-right: 2em ;
+        font-size: 23px;
+        text-align: center;
+    }
+
+    .dados table {
+        margin: 0;
+        border: 20px;
+        border-radius: 20px;
+        border-color: rgb(5, 5, 5);
+        width: 100%;
+        font-family: 'Tauri', sans-serif;
+    }
+
+    .dados table td {
+        padding: 10px;
+    }
+
+    ::placeholder{
+        color:#2B2136;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #editar{
+        background-color:#000000;
+        color: white;
+        border-radius: 10px;
+    }
+
+    #trash{
+        background-color:#f81505;
+        color: white;
+        border-radius: 10px;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    #edicao{
+        margin: 0 auto;
+        position: absolute;
+        margin-left: 12em;
+        margin-top: 2em;
+        background-color: #FFFFFF;
+        width: 70%;
+        height: 90%;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+        border-radius: 25px;
+                
+    }
+
+    .form-header h1{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        margin-left: 3.5em;
+        font-family: 'Tauri', sans-serif;
+    }
+
+  #tituloedit{
+    box-sizing: border-box;
+
+    width: 700px;
+    height: 69px;
+    margin-left: 5em;
+    top: 433px;
+    margin-bottom: 0.5em;
+
+    background: #FFFFFF;
+    border: 3px solid #F5F5F5;
+    border-radius: 10px;
+    font-size: 24px;
+  }
+
+  #pageedit{
+    box-sizing: border-box;
+
+    width: 700px;
+    height: 69px;
+    margin-left: 5em;
+    top: 433px;
+    margin-bottom: 0.5em;
+
+    background: #FFFFFF;
+    border: 3px solid #F5F5F5;
+    border-radius: 10px;
+    font-size: 24px;
+  }
+
+  #butonedit{
+     margin-top: 10px;
+     margin-left: 5em;  
+     height: 67px;
+     background: #2B2136;
+     border-radius: 10px;
+     font-family: 'Inter';
+
+     text-align: center;
+     font-weight: 700;
+     font-size: 24px;
+     color: #FFFFFF;
+     box-sizing: border-box;   
+     width: 700px;
+     cursor: pointer;
+
+  }
+
+  @media (max-width: 1300px){
+    .livro .cadastro input{ 
+        flex-direction: row;
+        margin-top: 25px; 
+        margin-right: 1.2em;
+        width: 350px;
+        height: 65px;
+    }
+
+    form button{
+        margin-top: 25px;
+        width: 150px;
+        height: 65px;
+        font-size: 27px;
+        text-align: center;
+    }
+
+  }
+
+   @media (max-width: 1550px){
+    .livro .cadastro input{ 
+        flex-direction: row;
+        margin-top: 25px; 
+        margin-right: 1.2em;
+        width: 350px;
+        height: 65px;
+    }
+
+    form button{
+        margin-top: 25px;
+        width: 150px;
+        height: 65px;
+        font-size: 23px;
+        text-align: center;
+    }
+
+  }
+
+  @media (max-width: 1350px){
+    #edicao{
+        width: auto;
+        height: 58%;
+    }
+
+    .form-header h1{
+        margin-top: 40px;
+        margin-bottom: 10px;
+        margin-left: 2.1em;
+        font-size: 30px;
+        font-family: 'Tauri', sans-serif;
+    }
+    
+    #tituloedit{
+        margin-left: 3em;
+    }
+
+    #pageedit{
+        margin-left: 3em;
+    }
+
+    #butonedit{
+        margin-left: 3em;
+    }
+  }
+
+
+  </style>
+    
+</head>
+<body>
+
+    {{{body}}}
+
+</body>
+</html>
