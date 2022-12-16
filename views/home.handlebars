@@ -7,40 +7,64 @@ Moon Book</h1>
   </div>
 </div>
 
+
+
+
+
+
+
 <div class="livro">
-  <form action="/insert" method="POST">
-    <h1>Cadastro de Livros</h1>
+  
+    <form action="/home/insert" method="POST">
+
+     
+    <div class = "lv">
+      <h1>Cadastro de Livros</h1>
+    </div>
 
     <div class="cadastro">
-      <input name="title" type="text" placeholder="Qual o Título" required />
+      <input name="title" type="text" placeholder="Digite o título" required />
       <input
         name="pages"
         type="number"
         placeholder="Nº de Páginas"
         required
       />
+      <input name="idusers" style="display: none;" value="{{user.idusers}}">
       <button type="submit">Cadastrar</button>
 	  
     </div>
   </form>
-  
+
+
+
 
   <div class="dados">
     <table>
       <tr>
         <th>Título do Livro</th>
         <th>Nº de Páginas</th>
+        <th>Status</th>
+    
       </tr>
-      {{#each books}}
+</div>
+      {{#each booksUser}}
+
         <tr>
+          <td id="idusers" name="idusers" style="display: none;">{{idusers}}</td>
+          <td name="id" style="display: none;">{{idbooks}}</td>
+         
           <td name="id" style="display: none;">{{idbooks}}</td>
           <td name="title" width="45%">{{title}}</td>
           <td name="pages" width="25%">{{pages}}</td>
+          <td name="status" class="status">{{status}}</td>
           <td>
+           
             <a href="/edit/{{idbooks}}">
               <i class="fa-solid fa-pen-to-square" id="editar"></i>
             </a>
-            <a href="/delete/{{idbooks}}">
+            <a href="/delete/{{idbooks}}/{{idusers}}">
+              <input name="idusers" style="display: none;" value="{{books.idusers}}">
               <i class="fa-solid fa-trash" id="trash"></i>
             </a>
           </td>
@@ -48,4 +72,5 @@ Moon Book</h1>
       {{/each}}
     </table>
   </div>
+
 </div>

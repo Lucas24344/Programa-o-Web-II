@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <meta charset="utf-8">
+    
     <script src="https://kit.fontawesome.com/6988af4e51.js" crossorigin="anonymous" defer></script>
     <style>
     *{
         margin: 0;
-        padding: 20px;
+        padding: 18px;
+    }
+    .newAcount{
+        font-family: "Poppins", sans-serif;
+        margin-top: -80px;
+        margin-left: 50px;    
+        height: 67px;
+        float: left;
+        text-align: center;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 15px;    
+        width: 400px;
+        font-weight: 500;
+    }
+    div.cd{
+        margin-left:-70px;
+    }
+    div.lv{
+        margin-left:-110px;
+    }
+    .Acount{
+        font-family: "Poppins", sans-serif;
+        margin-top: -80px;
+        margin-left: 50px;    
+        height: 67px;
+        float: left;
+        text-align: center;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 15px;    
+        width: 400px;
+        font-weight: 500;
     }
     .header2 h1 {
         font-size: 50px;
@@ -14,7 +48,8 @@
         margin-bottom: 1px;
         margin: 20px 0px 0px 0px;
         padding: 5px 0px 0px 5px;
-        font-family: 'Tauri', sans-serif;
+        font-family: 'Poppins', sans-serif;
+        font-weight:bold;
         color: #f8f8f8;
         
     }
@@ -22,11 +57,13 @@
     .header1 {
         float: left;
         width: 110px;
+        
     }
 
     .header2 {
         float:left;    
         width: 30%;
+        margin-top: -100px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     }
@@ -41,36 +78,65 @@
     }
 
     body{
-        width: 100%;
+        width: 95%;
         height: 100vh;
+        margin-top: auto;
         
         display: flex;
         flex-direction: column;
-        background-color: #4e19df;
+        background:linear-gradient(45deg,#1f90ec, #4517c5);
     }
+
+
 
     form h1{
         font-family: sans-serif;
         margin-bottom: 1.6em;
         margin-right: 18em;
         
-    }
-
-    .livro {
-        margin: 0 auto;
-        background-color: #FFFFFF;
-        width: 95%;
-        height: auto;
-        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+        
         
     }
 
+    .livro {
+
+    
+
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: auto;
+        
+        border-radius: 2%;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
+        
+        
+    }
+        .livro1 {
+        margin: 0 auto;
+        background-color: #FFFFFF;
+        width: 100%;
+        height: auto;
+        
+        border-radius: 2%;
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);   
+    }
+
+    tr {
+    height: 3rem;
+    }
+    
+
     .livro h1 {
+        
         margin-top: 40px;
         margin-bottom: 10px;
-        margin-left: 5em;
-        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        margin-left: 275px;
+        font-weight: bold;
+        font-family: 'Poppins', sans-serif;
+        
     }
+
 
     .livro .cadastro {
         width: 30%;
@@ -79,7 +145,7 @@
 
     .livro .cadastro input{
         box-sizing: border-box; 
-        margin-top: 10px; 
+        margin-top: 60px; 
         margin-right: 2em;
         width: 500px;
         height: 69px;
@@ -87,27 +153,29 @@
         background: #FFFFFF;
         border: 3px solid #F5F5F5;
         border-radius: 10px;
-        font-family: 'Inter', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 20px;
+        outline: none;
     }
 
     form button{
         margin-top: 10px;
-        margin-left: 10px;    
+        margin-left: 0px;    
         height: 67px;
         float: left;
-        background: #4e19df;
+        background:linear-gradient(45deg,#4476e6, #4517c5);
         border-radius: 10px;
-        font-family: 'Inter';
+        
         text-align: center;
-        font-weight: 700;
+        font-weight: 500;
         font-size: 24px;
         text-align: center;
         color: #FFFFFF;
         box-sizing: border-box;
-        padding: 20px;    
+        padding: 15px;    
         width: 400px;
         cursor: pointer;
+        font-family: 'Poppins', sans-serif;
     }
 
     .dados {
@@ -117,6 +185,7 @@
         margin-right: 2em ;
         font-size: 23px;
         text-align: center;
+        
     }
 
     .dados table {
@@ -137,17 +206,33 @@
         padding: 20px;
         text-align: center;
     }
+.filter-box button {
+    margin-left: 0.5rem;
+    margin-top: 1rem;
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+}
+
 
     #editar{
+        padding: 11px;
         background-color:#000000;
         color: white;
         border-radius: 10px;
+ 
+
     }
 
     #trash{
+        padding: 11px;
+        
         background-color:#f81505;
         color: white;
         border-radius: 10px;
+      
     }
 
     a{
@@ -161,7 +246,7 @@
         margin-top: 2em;
         background-color: #FFFFFF;
         width: 70%;
-        height: 90%;
+        height: 115%;
         box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05);
         border-radius: 25px;
                 
@@ -170,8 +255,8 @@
     .form-header h1{
         margin-top: 40px;
         margin-bottom: 10px;
-        margin-left: 3.5em;
-        font-family: 'Tauri', sans-serif;
+        margin-left: 10em;
+        font-family: 'Poppins', sans-serif;
     }
 
   #tituloedit{
@@ -205,20 +290,27 @@
   }
 
   #butonedit{
-     margin-top: 10px;
-     margin-left: 5em;  
+     margin-top: 5px;
+     margin-left: 10em;  
      height: 67px;
-     background: #2B2136;
+
+
+    background:linear-gradient(45deg,#4476e6, #4517c5);
+    border-radius: 10px;
+
      border-radius: 10px;
      font-family: 'Inter';
 
      text-align: center;
-     font-weight: 700;
-     font-size: 24px;
-     color: #FFFFFF;
-     box-sizing: border-box;   
-     width: 700px;
-     cursor: pointer;
+    font-weight: 500;
+    font-size: 24px;
+    text-align: center;
+    color: #FFFFFF;
+    box-sizing: border-box;
+    padding: 15px;    
+    width: 400px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 
   }
 
@@ -285,6 +377,22 @@
     #butonedit{
         margin-left: 3em;
     }
+  }
+
+  select#status{
+    
+       box-sizing: border-box;
+
+    width: 700px;
+    height: 69px;
+    margin-left: 5em;
+    top: 433px;
+    margin-bottom: 0.5em;
+
+    background: #FFFFFF;
+    border: 3px solid #F5F5F5;
+    border-radius: 10px;
+    font-size: 24px;
   }
 
 

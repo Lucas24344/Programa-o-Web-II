@@ -1,7 +1,8 @@
 {{#each book}}
+
 	<form action="/edit" method='POST' id="edicao">
 		<div class="form-header">
-			<h1>Edição de Livros</h1>
+			<h1>Editar Livros</h1>
 		</div>
 
 		<div class="input-box">
@@ -15,8 +16,20 @@
 		<div class="input-box">
 			<input name="pages" id="pageedit" type="number" placeholder="Quantidade de páginas" required value="{{pages}}">
 		</div>
-		<div class="input-box">
+		<div class="filter-box">
+			<select id="status" name="status" required>
+				<option value=""></option>
+				<option value="Já li">Lido</option>
+				<option value="Estou lendo">Lendo</option>
+				<option value="Quero ler">Pretendo Ler</option>
+			</select> 
+			<div class="input-box">
+			<input name="idusers" style="display: none;" value="{{idusers}}">
 			<button type="submit" id="butonedit">Editar</button>
 		</div>
+		</div>
+
+		
 	</form>
+
 {{/each}}
