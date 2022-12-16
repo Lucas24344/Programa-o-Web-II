@@ -208,7 +208,7 @@ conn.connect(function (err) {
     console.log(err);
   }
 
-  console.log("Conectado ao MySQL");
+  console.log("Conectado ao MySQL2");
 
   app.listen(porta);
 });
